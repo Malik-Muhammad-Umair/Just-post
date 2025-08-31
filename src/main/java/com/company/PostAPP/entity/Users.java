@@ -61,6 +61,7 @@ public class Users {
         this.displayPicture = displayPicture;
     }
 @Lob
-@Column(length = 1000000000)
+@Basic(fetch = FetchType.LAZY)
     private byte[] displayPicture;
 }
+
